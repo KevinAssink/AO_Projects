@@ -1,0 +1,9 @@
+table, th, td {
+    border: 1px solid black;
+}
+div.image {
+    padding-top: 30px;
+}
+*{
+    box-sizing: border-box;
+}

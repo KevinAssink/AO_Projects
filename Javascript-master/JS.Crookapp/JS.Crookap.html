@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CrookApp</title>
+</head>
+<style>
+    #Head {
+        height: 100px;
+        width: 300px;
+    }
+    #Body {
+        height: 100px;
+        width: 300px;
+
+    }
+    #Legs {
+        height: 100px;
+        width: 300px;
+    }
+</style>
+<body>
+<h1>Pokemon CrookApp</h1>
+<div id="Head"></div>
+<div id="Body"></div>
+<div id="Legs"></div>
+
+<script>
+    var plaatjes = [1,2,3,4];
+    var teller = 0;
+    var slideholder = document.getElementById("Head");
+    slideholder.style.backgroundImage = "url('img/Head3.png')";
+
+    slideholder.addEventListener("click", function () {
+        slideholder.style.backgroundImage = "url('img/Head" + getHead() + ".png')";
+    });
+
+    function getHead() {
+if(teller >= plaatjes.length) {
+teller = 1;
+} else {
+teller++
+}
+console.log(teller);
+return teller;
+}
+
+    var pics = [1,2,3,4];
+    var counter = 0;
+    var slideholder2 = document.getElementById("Body");
+    slideholder2.style.backgroundImage = "url('img/Body3.png')";
+
+    slideholder2.addEventListener("click", function () {
+        slideholder2.style.backgroundImage = "url('img/Body" + getBody() + ".png')";
+    });
+
+    function getBody() {
+        if(counter >= pics.length) {
+            counter = 1;
+        } else {
+            counter++
+        }
+        console.log(counter);
+        return counter;
+    }
+
+    var img = [1,2,3,4];
+    var cnt = 0;
+    var slideholder3 = document.getElementById("Legs");
+    slideholder3.style.backgroundImage = "url('img/Legs3.png')";
+
+    slideholder3.addEventListener("click", function () {
+        slideholder3.style.backgroundImage = "url('img/Legs" + getLegs() + ".png')";
+    });
+
+    function getLegs() {
+        if(cnt >= img.length) {
+            cnt = 1;
+        } else {
+            cnt++
+        }
+        console.log(cnt);
+        return cnt;
+    }
+</script>
+
+
+</body>
+</html>

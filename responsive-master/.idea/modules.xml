@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/IdeaProjects/IdeaProjects.iml" filepath="$USER_HOME$/IdeaProjects/IdeaProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../.idea/PhpstormProjects.iml" filepath="$PROJECT_DIR$/../.idea/PhpstormProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ProjectX/.idea/ProjectX.iml" filepath="$PROJECT_DIR$/../ProjectX/.idea/ProjectX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Response.iml" filepath="$PROJECT_DIR$/.idea/Response.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Wiskunde/.idea/Wiskunde.iml" filepath="$PROJECT_DIR$/../Wiskunde/.idea/Wiskunde.iml" />
+    </modules>
+  </component>
+</project>

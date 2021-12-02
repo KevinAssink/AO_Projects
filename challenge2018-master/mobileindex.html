@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="Mobile.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="header">
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">Home</a>
+                <a href="#">Memory</a>
+                <a href="#">Getallenrij</a>
+                <a href="#">Picturepuzzle</a>
+            </div> <!-- end of dropdown content -->
+        </div> <!-- end of dropdown -->
+        <i class="fas fa-sign-in-alt"></i>
+    </div> <!-- end of navbar -->
+</div>
+<div id="wrapper">
+    <div id="slideholder">
+        <script>
+            var plaatjes = [1, 2, 3, 4];
+            var teller = 0;
+            var slideholder = document.getElementById("slideholder");
+            slideholder.addEventListener("click", function () {
+                slideholder.style.backgroundImage = "url('img/burt" + getBurt() + ".jpg')"
+            });
+
+            function getBurt() {
+                if (teller >= plaatjes.length) {
+                    teller = 1;
+                } else {
+                    teller++;
+                }
+                console.log(teller);
+                return teller;
+            }
+        </script>
+    </div> <!-- end of slideholder -->
+    <h3>Burt Reynolds</h3>
+    <p>
+        In zijn jeugd was Reynolds een American football-talent. Na een zware blessure stapte hij over op schooltoneel
+        en in 1956 won hij de Florida State Drama Award. Vervolgens won hij een beurs voor een vervolgopleiding en
+        verhuisde naar New York waar hij zijn eerste rollen speelde. Zijn eerste televisie-optreden was in de serie
+        Riverboat in het midden van de jaren vijftig en van 1962 tot 1965 speelde hij Quint Aspen in de serie Gunsmoke.
+        In 1961 maakte hij zijn speelfilmdebuut. Zijn rol in Deliverance in 1972 maakte hem tot een ster.
+    </p>
+    <table align="center">
+        <tr>
+            <th colspan="3">Filmografie als acteur</th>
+        </tr>
+        <tr>
+            <td>1961</td>
+            <td>Angel Baby</td>
+            <td>Hoke Adams</td>
+        </tr>
+        <tr>
+            <td>1961</td>
+            <td>Armored Command</td>
+            <td>Skee</td>
+        </tr>
+        <tr>
+            <td>1965</td>
+            <td>Operation C.I.A.</td>
+            <td>Mark Andrews</td>
+        </tr>
+    </table>
+</div> <!-- end of wrapper -->
+</body>
+</html>

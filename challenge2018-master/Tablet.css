@@ -1,0 +1,46 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+
+}
+table{
+    background: #6888b1;
+    width: 100%;
+    color: black;
+}
+th {
+    background: #456185;
+    width: 100%;
+    color: white;
+}
+.header {
+    color:#fff !important; background-color:#456185 !important;
+    padding: 15px;
+    padding-left: 10px;
+
+}
+.button {
+    background-color: #6888b1;
+    border: none;
+    color: white;
+    padding: 9px 15px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color : white;
+}
+.wrapper {
+    text-align: center;
+    padding-top: 10px;
+    background: #d9e1ec ;
+}
+.fa-sign-in-alt {
+    font-size: 28px;
+    padding-left: 137px;
+}
+.footer {
+    background: #456185;
+    color: white;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guard Shuffle</title>
+    <link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
+    <style>
+        html {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+        body {
+            font-family: 'Copse', serif ;
+            text-align: center;
+        }
+        img {
+            height: 300px;
+            width: 300px;
+            border: 0px;
+        }
+        #pics {
+            width: 900px;
+            height: 900px;
+            border: solid 1px black;
+            font-size: 0px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<h1>Gaurd Shuffle</h1>
+<div id="pics">
+    <img src="img/Guard1.jpg">
+    <img src="img/Guard2.jpg">
+    <img src="img/Guard3.jpg">
+    <img src="img/Guard4.jpg">
+    <img src="img/Guard5.jpg">
+    <img src="img/Guard6.jpg">
+    <img src="img/Guard7.jpg">
+    <img src="img/Guard8.jpg">
+    <img src="img/Guard9.jpg">
+</div>
+<script>
+    var plaatjes = document.getElementsByTagName("img");
+    var random = 0;
+    var randomNumbers = [];
+    while(randomNumbers.length < 9){
+        random = Math.floor(Math.random() * 9)+1;
+        if (randomNumbers.lastIndexOf(random) == -1){
+            randomNumbers.push(random)
+        }
+    }
+    random = 0;
+    for(var plaatje in plaatjes) {
+        plaatjes[plaatje].src = "img/Guard" + randomNumbers[random] + ".jpg";
+        random++;
+    }
+
+</script>
+</body>
+</html>

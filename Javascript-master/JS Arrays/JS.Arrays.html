@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+    <link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
+    <style>
+        html {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+        body {
+            font-family: 'Copse', serif;
+            text-align: center;
+        }
+        img {
+            height: 300px;
+            width: 300px;
+        }
+        #pics {
+            width: 900px;
+            height: 900px;
+            border: solid 1px black;
+            font-size: 0px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<h1> Pokémon Shuffle</h1>
+<div id="pics">
+    <img src="img/Pkmn1.png">
+    <img src="img/Pkmn2.png">
+    <img src="img/Pkmn3.png">
+    <img src="img/Pkmn4.png">
+    <img src="img/Pkmn5.png">
+    <img src="img/Pkmn6.png">
+    <img src="img/Pkmn7.png">
+    <img src="img/Pkmn8.png">
+    <img src="img/Pkmn9.png">
+</div>
+<script>
+    var plaatjes = document.getElementsByTagName("img");
+    var random = 0;
+
+    var randomNumbers = [];
+
+    while (randomNumbers.length < 9) {
+        random = Math.floor(Math.random() * 9) + 1;
+        if (randomNumbers.lastIndexOf(random) == -1){
+            randomNumbers.push(random);
+        }
+    }
+    random = 0;
+    for (var plaatje in plaatjes) {
+        plaatjes[plaatje].src = "img/Pkmn" + randomNumbers[random] + ".png";
+        random++
+    }
+
+    // for (var i = 0; i < plaatjes.length; i++) {
+    //     random = Math.floor(Math.random() * 9) +1;
+    //     plaatjes[i].src = "img/Pkmn" + random + ".png"
+    // }
+
+</script>
+</body>
+</html>

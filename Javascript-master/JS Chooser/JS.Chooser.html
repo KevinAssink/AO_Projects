@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pkmn Chooser</title>
+    <link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
+    <style>
+
+        body {
+            font-family: 'Copse', serif;
+            text-align: center;
+        }
+        div.picture-holder {
+            box-sizing: border-box;
+            height: 450px;
+            width: 300px;
+            float: left;
+            border: solid 1px black;
+        }
+
+        div.fave {
+            width: 300px;
+            height: 150px;
+            background-image: none;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #pics {
+            width: 900px;
+            height: 1350px;
+            border: solid 1px black;
+            font-size: 0px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<h1>Pokémon Chooser</h1>
+<h3>Choose your favorite Pokémon!</h3>
+<div id="pics">
+
+</div>
+<script>
+    pics = document.getElementById("pics");
+    createPicsHolders();
+    createPkmnImages();
+
+    function createPicsHolders() {
+        for (var i = 0; i < 9; i++) {
+            pictureHolder = document.createElement("div");
+            pictureHolder.className = "picture-holder";
+            pictureHolder.id = "picture-holder-" + i;
+            pics.appendChild(pictureHolder);
+        }
+    }
+
+    function createPkmnImages() {
+        pictureHolders = document.getElementsByClassName("picture-holder");
+        for (var i = 0; i < pictureHolders.length; i++) {
+            fave = document.createElement("div");
+            fave.className = "fave";
+            fave.id = "favoriet_" + (i+1);
+            pkmnPlaatje = document.createElement("img");
+            pkmnPlaatje.src = "img/Pkmn" + (i+1) + ".png";
+            pkmnPlaatje.id = (i+1);
+            pkmnPlaatje.addEventListener("click", function () {
+                maakFavoriet(this.id);
+            });
+            pictureHolders[i].appendChild(fave);
+            pictureHolders[i].appendChild(pkmnPlaatje);
+        }
+    }
+    
+    function maakFavoriet(id) {
+        console.log("Maak mij Favoriet! Het gaat om Pokémon..." + id );
+        notsofavoriet = document.getElementsByClassName("fave");
+
+        for (var i = 0; i < notsofavoriet.length; i++) {
+            notsofavoriet[i].style.backgroundImage = "none";
+        }
+
+        favoriet = document.getElementById("favoriet_" + id);
+        favoriet.style.backgroundImage = "url('img/icon.png')";
+    }
+</script>
+</body>
+</html>

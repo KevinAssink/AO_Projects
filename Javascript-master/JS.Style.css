@@ -1,0 +1,10 @@
+body {
+    font-size: 15px;
+    text-align: center;
+    background-color: #5b80a4;
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    display: inline-block;
+}

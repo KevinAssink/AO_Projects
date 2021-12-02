@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../JS/.idea/JS.iml" filepath="$PROJECT_DIR$/../JS/.idea/JS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/KapperPHP.iml" filepath="$PROJECT_DIR$/.idea/KapperPHP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ResponsiveKapper/.idea/Mobile.iml" filepath="$PROJECT_DIR$/../ResponsiveKapper/.idea/Mobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PHPChallengeRes/.idea/PHPChallengeRes.iml" filepath="$PROJECT_DIR$/../PHPChallengeRes/.idea/PHPChallengeRes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PortfolioSite/.idea/PortfolioSite.iml" filepath="$PROJECT_DIR$/../PortfolioSite/.idea/PortfolioSite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../challengephp2018/.idea/challengephp2018.iml" filepath="$PROJECT_DIR$/../challengephp2018/.idea/challengephp2018.iml" />
+    </modules>
+  </component>
+</project>
